@@ -1,38 +1,122 @@
+:root {
+  --color-background: #222831;
+  --color-background2: #393E46;
+  --color-background3: #182b40;
+  --color-highlight: #00ADB5;
+  --color-text: #ffffff;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--color-background)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+  background-color: var(--color-background2);
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 6%;
+  
   }
-}
+  
+  .navbar a, .navbar p, Link {
+  color: var(--color-text);
+  text-decoration: none;
+  display: inline-block;
+    padding: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  .navbar a:hover, p:hover { 
+    color: var(--color-highlight);
+    cursor: pointer;
+  }
+
+
+  .main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 6%;
+  color: var(--color-text)
+    }
+
+li {
+  padding: 10px;
+  color: var(--color-text)
+}
+
+li:nth-child(even) {
+  background-color: var(--color-background2)
+}
+li:nth-child(odd) {
+  background-color: var(--color-background3);
+
+
+}
+
+li:hover {
+  color: var(--color-highlight);
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+h3, h4 {
+  cursor: default;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  width: 100%;
+  margin-top: 6%;
+}
+
+.column {
+  width: 30%;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: var(--color-background3);
+  cursor: pointer;
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: var(--color-highlight)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
