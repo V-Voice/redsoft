@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/redsoft/static/css/main.e6f7f33a.css",
+    "main.js": "/redsoft/static/js/main.00b481c5.js",
+    "index.html": "/redsoft/index.html",
+    "main.e6f7f33a.css.map": "/redsoft/static/css/main.e6f7f33a.css.map",
+    "main.00b481c5.js.map": "/redsoft/static/js/main.00b481c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6f7f33a.css",
+    "static/js/main.00b481c5.js"
+  ]
+}
