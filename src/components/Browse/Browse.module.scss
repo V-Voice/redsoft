@@ -1,0 +1,58 @@
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: 10px;
+      color: var(--color-text);
+      text-decoration: none;
+    }
+    li:hover {
+      color: #ffffff;
+      cursor: pointer;
+      background: #2b2525;
+      box-shadow: 3px 5px 2px 1px rgba(213, 25, 40, 0.3);
+    }
+       
+    .parentList,
+    .childList {
+      width: 30%;
+      padding: 10px;
+  }
+
+  .noItems {
+    color: #d51928;
+  }
+
+  h3 {
+    margin-bottom: 10%;
+    min-height: 40px;
+  }
+
+  .childList {
+    & input {
+      width: 80%;
+      padding: 5px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      box-shadow: 3px 5px 2px 1px rgba(43, 37, 37, 0.3);
+    }
+  }
+  & button {
+    background: #d51928;
+    color: white;
+    font-size: 18px;
+    padding: 5px 18px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    margin-left: 10px;
+  }
+  & button:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid;
+    cursor: pointer;
+    
+  }
+}

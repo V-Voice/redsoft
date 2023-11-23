@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Inter:wght@200;300&family=Jost:ital,wght@0,500;1,100&family=Roboto+Mono:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", cursive;
+}
+
+body {
+  // background-color: #523634;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+

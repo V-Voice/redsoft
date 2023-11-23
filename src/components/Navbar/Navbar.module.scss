@@ -1,0 +1,38 @@
+header {
+    background-color: #2b2525;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .navbar {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+     
+      nav {
+        display: flex;
+      }
+  
+      button {
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        font-size: 18px;
+        padding: 0px 10px;
+        margin: 0 5px;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .navbar {
+    button:hover {
+      background-color: #d51928;
+      color: white;
+    }
+}
