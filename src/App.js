@@ -10,7 +10,7 @@ function App() {
 
   
   return (
-    <>
+    <div className="page">
     
     <Navbar />
         <Routes>
@@ -22,7 +22,7 @@ function App() {
     <Footer />
 
     
- </>
+</div>
   );
 }
 
