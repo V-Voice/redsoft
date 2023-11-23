@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/redsoft/static/css/main.0f5964f3.css",
-    "main.js": "/redsoft/static/js/main.92a31381.js",
+    "main.css": "/redsoft/static/css/main.1bd397f6.css",
+    "main.js": "/redsoft/static/js/main.bd133675.js",
     "static/media/logo.png": "/redsoft/static/media/logo.c13f67c5908f4960beeb.png",
     "index.html": "/redsoft/index.html",
-    "main.0f5964f3.css.map": "/redsoft/static/css/main.0f5964f3.css.map",
-    "main.92a31381.js.map": "/redsoft/static/js/main.92a31381.js.map"
+    "main.1bd397f6.css.map": "/redsoft/static/css/main.1bd397f6.css.map",
+    "main.bd133675.js.map": "/redsoft/static/js/main.bd133675.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f5964f3.css",
-    "static/js/main.92a31381.js"
+    "static/css/main.1bd397f6.css",
+    "static/js/main.bd133675.js"
   ]
 }
