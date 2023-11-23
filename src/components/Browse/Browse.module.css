@@ -1,0 +1,39 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  width: 100%;
+  margin-top: 6%;
+}
+
+.column {
+  width: 30%;
+  padding: 20px;
+}
+
+li {
+    padding: 10px;
+    color: var(--color-text)
+  }
+  
+  li:nth-child(even) {
+    background-color: var(--color-background2)
+  }
+  li:nth-child(odd) {
+    background-color: var(--color-background3);
+  
+  
+  }
+  
+  li:hover {
+    color: var(--color-highlight);
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  

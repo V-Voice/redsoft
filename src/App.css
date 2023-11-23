@@ -50,28 +50,7 @@ body {
   color: var(--color-text)
     }
 
-li {
-  padding: 10px;
-  color: var(--color-text)
-}
 
-li:nth-child(even) {
-  background-color: var(--color-background2)
-}
-li:nth-child(odd) {
-  background-color: var(--color-background3);
-
-
-}
-
-li:hover {
-  color: var(--color-highlight);
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-}
 
 h3, h4 {
   cursor: default;
@@ -79,25 +58,11 @@ h3, h4 {
   color: var(--color-text);
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-  width: 100%;
-  margin-top: 6%;
-}
 
-.column {
-  width: 30%;
-  padding: 20px;
-}
 
-ul {
-  list-style: none;
-  padding: 0;
-}
+
 input {
-  width: 50%;
+  width: 30%;
   padding: 10px;
   margin-bottom: 10px;
   box-sizing: border-box;
