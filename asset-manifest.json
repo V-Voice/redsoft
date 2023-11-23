@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/redsoft/static/css/main.569ba7db.css",
-    "main.js": "/redsoft/static/js/main.ab9c5147.js",
+    "main.js": "/redsoft/static/js/main.1fd3b2a9.js",
     "index.html": "/redsoft/index.html",
     "main.569ba7db.css.map": "/redsoft/static/css/main.569ba7db.css.map",
-    "main.ab9c5147.js.map": "/redsoft/static/js/main.ab9c5147.js.map"
+    "main.1fd3b2a9.js.map": "/redsoft/static/js/main.1fd3b2a9.js.map"
   },
   "entrypoints": [
     "static/css/main.569ba7db.css",
-    "static/js/main.ab9c5147.js"
+    "static/js/main.1fd3b2a9.js"
   ]
 }
