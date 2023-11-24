@@ -18,6 +18,19 @@ const Browse: React.FC<{ data: DataItem[] }> = ({ data }) => {
     setSelectedNode(node);
   };
 
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const searchTerm = e.target.value;
+    setSearchTerm(searchTerm);
+
+   
+  
+    
+    const filteredData = selectedNode?.children.filter(child => child.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    if (filteredData?.length === 0) {
+      setSearchTerm('');
+    }
+  };
+
   const handleSort = () => {
     setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
   };
@@ -69,7 +82,7 @@ const Browse: React.FC<{ data: DataItem[] }> = ({ data }) => {
     <>
       <div className={st.container}>
         <div className={st.parentList}>
-          <h3>Родительские элементы</h3>
+        <h3>Родительские элементы</h3>
           <ul id="parent-nodes">
             {data[0].children.map(node => (
               <li key={node.key} onClick={() => handleNodeClick(node)}>
@@ -79,27 +92,28 @@ const Browse: React.FC<{ data: DataItem[] }> = ({ data }) => {
           </ul>
         </div>
         <div className={st.childList}>
-          <h3>Дочерние элементы {selectedNode ? selectedNode.name : ''}</h3>
-          {filteredChildren.length > 0 ? (
-            <ul id="children">
-              <input
-                type="text"
-                placeholder="Поиск..."
-                value={searchTerm}
-                onChange={e => setSearchTerm(e.target.value)}
-              />
+        <h3>Дочерние элементы {selectedNode ? selectedNode.name : ''}</h3>
+        <input type="text" value={searchTerm} onChange={handleSearch} />
               <button onClick={handleSort}>
                 ⇅
               </button>
+          {filteredChildren.length > 0 ? (
+            <ul id="children">
               {filteredChildren.map(child => (
                 <li key={child.key} onClick={() => handleNavigate(child)}>
                   {child.name}
                 </li>
               ))}
-              <button onClick={handleBack}>Назад</button>
+              {selectedNode && selectedNode.key !== '_' && (
+                <button onClick={handleBack}>Назад</button>
+              )}
             </ul>
           ) : (
+            <>
             <h3 className={st.noItems}>Нет дочерних элементов ❌</h3>
+            
+            {(selectedNode === null) ? null : <button onClick={handleBack}>Назад</button> }
+            </>
           )}
           <div></div>
         </div>

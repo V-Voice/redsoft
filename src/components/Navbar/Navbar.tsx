@@ -30,11 +30,13 @@ const Navbar: React.FC = () => {
   return (
     <header className={st.header}>
     <div className={st.navbar}>
+      <div className={st.logo}>
     <Link to={"/"} className={st.logo}>
           <div className={st.logo}>
            <img src={String(logo)} alt="logo" height="50px"/>
           </div>
         </Link>
+    </div>
         <nav>
       <Link to="/"><button>Главная</button></Link>
       <Link to="/browse"><button>Просмотр</button></Link>
